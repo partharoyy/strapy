@@ -44,7 +44,7 @@ export const CreatePostUploadBtn = ({
   );
 };
 
-export const Post_Delete_Btn = ({ post, onDeleteHandler }) => {
+export const PostDeleteBtn = ({ onDeleteHandler }) => {
   return (
     <DeleteIcon
       className={classes.post_Delete_Btn}
@@ -57,7 +57,7 @@ export const Post_Delete_Btn = ({ post, onDeleteHandler }) => {
   );
 };
 
-export const Create_Post_Btn = ({ comment, addComment }) => {
+export const CreatePostBtn = ({ comment, addComment }) => {
   return (
     <SendIcon
       className={classes.create_post_btn}

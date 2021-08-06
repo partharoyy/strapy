@@ -1,6 +1,6 @@
 import React, { useState, useContext, useRef } from "react";
 import classes from "./CreateComment.module.css";
-import { Create_Post_Btn } from "../../../ui/button/Button";
+import { CreatePostBtn } from "../../../ui/button/Button";
 import { UserContext } from "../../../context/userContext";
 import { db } from "../../../firebase/firebase";
 
@@ -46,7 +46,7 @@ const CreateComment = ({ id, comments, onClickCommentInput }) => {
         rows="2"
         className={classes.createComment_textarea}
       ></textarea>
-      <Create_Post_Btn comment={comment} addComment={addComment} />
+      <CreatePostBtn comment={comment} addComment={addComment} />
     </div>
   );
 };

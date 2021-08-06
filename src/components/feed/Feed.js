@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect, Fragment } from "react";
 import classes from "./Feed.module.css";
-import { Post_Delete_Btn } from "../../ui/button/Button";
+import { PostDeleteBtn } from "../../ui/button/Button";
 import { UserContext } from "../../context/userContext";
 import Post from "./post/Post";
 import { db, timestamp, storage } from "../../firebase/firebase";
@@ -59,7 +59,7 @@ const Feed = () => {
               </div>
               <div className={classes.feed_right_side}>
                 {post.username === user.email.replace("@gmail.com", "") && (
-                  <Post_Delete_Btn
+                  <PostDeleteBtn
                     key={Math.random()}
                     onDeleteHandler={() => onDeleteHandler(id, post)}
                   />
