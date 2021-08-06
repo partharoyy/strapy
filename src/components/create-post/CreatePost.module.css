@@ -1,0 +1,87 @@
+.createPost_main_container {
+  width: 50%;
+  max-width: 65rem;
+  background: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.create_post p {
+  padding: 1rem 0;
+}
+
+.createPost_textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.createPost_image_uploader_input {
+  display: none;
+}
+
+.createPost_image_uploader_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image_preview {
+  display: none;
+  height: 8rem;
+  width: 10rem;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+}
+
+/* laptop */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .createPost_main_container h4 {
+    font-size: 0.9rem;
+  }
+
+  .createPost_textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+/* mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .createPost_main_container {
+    width: 70%;
+  }
+
+  .createPost_textarea_container {
+    height: auto;
+  }
+
+  .createPost_main_container h4 {
+    font-size: 0.8rem;
+  }
+
+  .image_preview {
+    display: none;
+    height: 4rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+  }
+
+  .createPost_textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 0.7rem;
+    height: 2rem;
+  }
+}

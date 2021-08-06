@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(253, 248, 242);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s all linear;
+}
+
+textarea,
+input {
+  font-family: "Poppins", sans-serif;
+}

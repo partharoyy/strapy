@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap");
+
+.welcome__text {
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 4rem;
+}
+
+/* connect properties and animation */
+.connect {
+  color: rgb(253, 248, 242);
+  position: relative;
+  font-size: 5rem;
+}
+
+.connect::before {
+  content: "connect";
+  color: rgb(236, 103, 103);
+  width: 100%;
+  position: absolute;
+  font-size: 5rem;
+  top: 0;
+  left: 0;
+  animation: connect 0.5s linear;
+  -webkit-animation: connect 0.5s linear;
+  animation-delay: 0.3s;
+  overflow: hidden;
+}
+
+@keyframes connect {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes connect {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* share properties and animation */
+.share {
+  color: rgb(253, 248, 242);
+  position: relative;
+  font-size: 6rem;
+}
+
+.share::before {
+  content: "share";
+  color: rgb(196, 77, 77);
+  width: 100%;
+  position: absolute;
+  font-size: 6rem;
+  top: 0;
+  left: 0;
+  animation: share 0.5s linear;
+  -webkit-animation: share 0.5s linear;
+  animation-delay: 0.8s;
+  overflow: hidden;
+}
+
+@keyframes share {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes share {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* cheer properties and animation */
+.cherish {
+  color: rgb(253, 248, 242);
+  position: relative;
+  font-size: 7rem;
+}
+
+.cherish::before {
+  content: "cherish";
+  color: rgb(165, 44, 44);
+  width: 100%;
+  position: absolute;
+  font-size: 7rem;
+  top: 0;
+  left: 0;
+  animation: cherish 0.5s linear;
+  -webkit-animation: cherish 0.5s linear;
+  animation-delay: 1.3s;
+  overflow: hidden;
+}
+
+@keyframes cherish {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes cherish {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .welcome__text {
+    margin-top: 8rem;
+  }
+
+  .connect {
+    font-size: 2.5rem;
+  }
+
+  .connect::before {
+    font-size: 2.5rem;
+  }
+
+  .share {
+    font-size: 3.5rem;
+  }
+
+  .share::before {
+    font-size: 3.5rem;
+  }
+
+  .cherish {
+    font-size: 4.5rem;
+  }
+
+  .cherish::before {
+    font-size: 4.5rem;
+  }
+}
