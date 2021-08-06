@@ -3,7 +3,7 @@ import classes from "./WelcomeText.module.css";
 import { UserContext } from "../../context/userContext";
 
 const WelcomeText = () => {
-  const [user, setUser] = useContext(UserContext).user;
+  const [user] = useContext(UserContext).user;
 
   return (
     <Fragment>

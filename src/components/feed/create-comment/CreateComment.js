@@ -6,7 +6,7 @@ import { db } from "../../../firebase/firebase";
 
 const CreateComment = ({ id, comments, onClickCommentInput }) => {
   const [comment, setComment] = useState("");
-  const [commentList, setCommentList] = useState(comments ? comments : []);
+  const [commentList] = useState(comments ? comments : []);
   const [user] = useContext(UserContext).user;
 
   const commentRef = useRef();

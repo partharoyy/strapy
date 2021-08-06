@@ -3,7 +3,7 @@ import classes from "./Feed.module.css";
 import { PostDeleteBtn } from "../../ui/button/Button";
 import { UserContext } from "../../context/userContext";
 import Post from "./post/Post";
-import { db, timestamp, storage } from "../../firebase/firebase";
+import { db, storage } from "../../firebase/firebase";
 
 const Feed = () => {
   const [user] = useContext(UserContext).user;

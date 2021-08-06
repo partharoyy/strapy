@@ -4,7 +4,7 @@ import { SignInSignUpBtn } from "../../ui/button/Button";
 import { UserContext } from "../../context/userContext";
 
 const Header = () => {
-  const [user, setUser] = useContext(UserContext).user;
+  const [user] = useContext(UserContext).user;
 
   return (
     <Fragment>
@@ -14,7 +14,11 @@ const Header = () => {
         </div>
         <div className={classes.right__side}>
           {user ? (
-            <img className={classes.profileImage} src={user.photoURL} />
+            <img
+              className={classes.profileImage}
+              src={user.photoURL}
+              alt="loggedInUserProfileImg"
+            />
           ) : (
             <SignInSignUpBtn />
           )}

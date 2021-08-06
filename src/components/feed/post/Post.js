@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState } from "react";
 import CreateComment from "../create-comment/CreateComment";
 import classes from "./Post.module.css";
 import MessageIcon from "@material-ui/icons/Message";

@@ -5,10 +5,9 @@ import AddAPhotoIcon from "@material-ui/icons/AddAPhoto";
 import { CreatePostUploadBtn } from "../../ui/button/Button";
 import { makeid } from "../../helper/functions";
 import { storage, db, timestamp } from "../../firebase/firebase";
-import firebase from "firebase";
 
 const CreatePost = () => {
-  const [user, setUser] = useContext(UserContext).user;
+  const [user] = useContext(UserContext).user;
   const [caption, setCaption] = useState("");
   const [image, setImage] = useState(null);
   const [progress, setProgress] = useState(0);
