@@ -45,20 +45,99 @@
   }
 }
 
+/* tablet */
+@media only screen and (max-device-width: 1024px) {
+  .feed {
+    width: 70%;
+  }
+}
+
 /* mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (max-device-width: 768px) {
   .feed {
     width: 70%;
   }
 
   .feed_img {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
     border-radius: 1.5rem;
   }
 
   .feed_username {
     margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .feed {
+    width: 90%;
+  }
+
+  .feed_img {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 1.5rem;
+  }
+
+  .feed_username {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .feed {
+    width: 90%;
+  }
+
+  .feed_img {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.5rem;
+  }
+
+  .feed_username {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .feed {
+    width: 85%;
+  }
+
+  .feed_img {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.5rem;
+  }
+
+  .feed_username {
+    margin-left: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 280px) {
+  .feed {
+    width: 85%;
+  }
+
+  .feed_img {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1.5rem;
+  }
+
+  .feed_username {
+    margin-left: 0.4rem;
     font-weight: 600;
     font-size: 0.8rem;
   }

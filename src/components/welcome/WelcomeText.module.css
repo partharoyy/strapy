@@ -124,9 +124,40 @@
 }
 
 /* mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+@media only screen and (max-device-width: 770px) {
   .welcome__text {
     margin-top: 8rem;
+  }
+
+  .connect {
+    font-size: 4.5rem;
+  }
+
+  .connect::before {
+    font-size: 4.5rem;
+  }
+
+  .share {
+    font-size: 5.5rem;
+  }
+
+  .share::before {
+    font-size: 5.5rem;
+  }
+
+  .cherish {
+    font-size: 6.5rem;
+  }
+
+  .cherish::before {
+    font-size: 6.5rem;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .welcome__text {
+    margin-top: 9rem;
   }
 
   .connect {
@@ -151,5 +182,65 @@
 
   .cherish::before {
     font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .welcome__text {
+    margin-top: 8rem;
+  }
+
+  .connect {
+    font-size: 2.5rem;
+  }
+
+  .connect::before {
+    font-size: 2.5rem;
+  }
+
+  .share {
+    font-size: 3.5rem;
+  }
+
+  .share::before {
+    font-size: 3.5rem;
+  }
+
+  .cherish {
+    font-size: 4rem;
+  }
+
+  .cherish::before {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-device-width: 360px) {
+  .welcome__text {
+    margin-top: 8rem;
+  }
+
+  .connect {
+    font-size: 2rem;
+  }
+
+  .connect::before {
+    font-size: 2rem;
+  }
+
+  .share {
+    font-size: 3rem;
+  }
+
+  .share::before {
+    font-size: 3rem;
+  }
+
+  .cherish {
+    font-size: 3.5rem;
+  }
+
+  .cherish::before {
+    font-size: 3.5rem;
   }
 }

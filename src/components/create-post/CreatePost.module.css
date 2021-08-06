@@ -54,34 +54,62 @@
 }
 
 /* mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+@media only screen and (max-device-width: 1024px) {
   .createPost_main_container {
     width: 70%;
   }
+}
 
-  .createPost_textarea_container {
-    height: auto;
+@media only screen and (max-device-width: 768px) {
+  .createPost_main_container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .createPost_main_container {
+    width: 88%;
   }
 
   .createPost_main_container h4 {
     font-size: 0.8rem;
   }
 
-  .image_preview {
-    display: none;
-    height: 4rem;
-    width: 5rem;
-    border-radius: 0.3rem;
-    margin: 1rem 0;
+  .createPost_textarea::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-device-width: 360px) {
+  .createPost_main_container {
+    width: 85%;
   }
 
-  .createPost_textarea {
-    resize: none;
-    border: none;
-    outline: none;
-    margin-top: 1rem;
-    width: 100%;
+  .createPost_main_container h4 {
+    font-size: 0.85rem;
+  }
+
+  .createPost_textarea::placeholder {
     font-size: 0.7rem;
-    height: 2rem;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .createPost_main_container {
+    width: 85%;
+  }
+
+  .createPost_main_container h4 {
+    font-size: 0.7rem;
+  }
+
+  .createPost_textarea::placeholder {
+    font-size: 0.6rem;
+  }
+
+  .image_preview {
+    height: 6rem;
+    width: 8rem;
   }
 }

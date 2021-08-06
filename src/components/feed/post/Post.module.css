@@ -122,46 +122,80 @@
   }
 }
 
-/* mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+/* tablet */
+@media only screen and (max-device-width: 1024px) {
   .post_img {
-    height: 8rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .post_img {
+    height: 22rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 540px) {
+  .post_img {
+    height: 15rem;
+  }
+}
+/* mobile */
+@media only screen and (max-device-width: 414px) {
+  .post_img {
+    height: 15rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  .post_img {
+    height: 13rem;
+    width: 100%;
   }
 
   .poster_username {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
 
   .poster_caption {
     margin-left: 0.5rem;
-    font-size: 0.7rem;
-  }
-
-  .msg_icon {
-    font-size: 0.05rem;
-    cursor: pointer;
-  }
-
-  .heart_icon {
-    font-size: 0.05rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.1rem;
-    cursor: pointer;
-  }
-
-  .like {
-    margin-left: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .comment_username {
-    font-size: 0.7rem;
-    font-weight: bold;
+    font-size: 0.8rem;
   }
 
   .comment_comment {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .post_img {
+    height: 10rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .poster_username {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .poster_caption {
     margin-left: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .comment_comment {
+    font-size: 0.8rem;
+  }
+  .comment_username {
+    font-size: 0.8rem;
   }
 }
