@@ -11,6 +11,10 @@
   max-width: 15rem;
 }
 
+.signIn__signUp__btn:focus {
+  outline: none;
+}
+
 .signIn__signUp__btn:hover {
   padding: 0.5rem;
   background: rgb(236, 103, 103);
@@ -24,8 +28,68 @@
   max-width: 15rem;
 }
 
+.LogoutBtn {
+  padding: 0.5rem;
+  background: transparent;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  color: rgb(243, 98, 72);
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  max-width: 15rem;
+  margin-right: 1rem;
+}
+
+.LogoutBtn:hover {
+  padding: 0.5rem;
+  background: transparent;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  max-width: 15rem;
+  margin-right: 1rem;
+}
+
 /* mobile */
-@media only screen and (max-device-width: 360px) {
+
+@media only screen and (max-device-width: 730px) {
+  .signIn__signUp__btn:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (max-device-width: 540px) {
+  .LogoutBtn {
+    margin-right: 0.2rem;
+  }
+}
+
+@media only screen and (max-device-width: 414px) {
+  .signIn__signUp__btn {
+    padding: 0.5rem;
+    margin-right: 0.1rem;
+    margin-top: 0.3rem;
+    font-size: 0.72rem;
+    max-width: 10rem;
+  }
+
+  .signIn__signUp__btn:focus {
+    outline: none;
+  }
+
+  .LogoutBtn {
+    font-size: 0.7rem;
+    margin-right: 0.2rem;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
   .signIn__signUp__btn {
     padding: 0.4rem;
     margin-right: 0.1rem;
@@ -33,14 +97,24 @@
     font-size: 0.72rem;
     max-width: 10rem;
   }
+
+  .signIn__signUp__btn:focus {
+    outline: none;
+  }
+
+  .LogoutBtn {
+    font-size: 0.7rem;
+    margin-right: 0.1rem;
+  }
 }
 
-@media only screen and (max-device-width: 411px) {
-  .signIn__signUp__btn {
-    padding: 0.5rem;
-    margin-right: 0.1rem;
-    margin-top: 0.3rem;
-    font-size: 0.72rem;
-    max-width: 10rem;
+@media only screen and (max-device-width: 280px) {
+  .LogoutBtn {
+    font-size: 0.5rem;
+    margin-right: 0.2rem;
+  }
+
+  .signIn__signUp__btn:focus {
+    outline: none;
   }
 }

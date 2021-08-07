@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import classes from "./Button.module.css";
-import { signInWithGoogle } from "../../services/auth";
+import { signInWithGoogle, googleLogout } from "../../services/auth";
 import { UserContext } from "../../context/userContext";
 import SendIcon from "@material-ui/icons/Send";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -22,6 +22,27 @@ export const SignInSignUpBtn = () => {
       className={classes.signIn__signUp__btn}
     >
       sign in | sign up
+    </button>
+  );
+};
+
+export const LogoutBtn = () => {
+  const [, setUser] = useContext(UserContext).user;
+
+  const buttonClickHandler = async () => {
+    let google_logout_success = await googleLogout();
+    if (google_logout_success) {
+      setUser(null);
+    }
+  };
+
+  return (
+    <button
+      onClick={buttonClickHandler}
+      id="LogoutBtn"
+      className={classes.LogoutBtn}
+    >
+      Logout
     </button>
   );
 };

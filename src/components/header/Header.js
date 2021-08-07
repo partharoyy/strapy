@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import classes from "./Header.module.css";
-import { SignInSignUpBtn } from "../../ui/button/Button";
+import { SignInSignUpBtn, LogoutBtn } from "../../ui/button/Button";
 import { UserContext } from "../../context/userContext";
 
 const Header = () => {
@@ -14,11 +14,14 @@ const Header = () => {
         </div>
         <div className={classes.right__side}>
           {user ? (
-            <img
-              className={classes.profileImage}
-              src={user.photoURL}
-              alt="loggedInUserProfileImg"
-            />
+            <div className={classes.right__side_logout} key={user.id}>
+              <LogoutBtn />
+              <img
+                className={classes.profileImage}
+                src={user.photoURL}
+                alt="loggedInUserProfileImg"
+              />
+            </div>
           ) : (
             <SignInSignUpBtn />
           )}

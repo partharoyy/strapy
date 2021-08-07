@@ -127,7 +127,7 @@
 
 @media only screen and (max-device-width: 770px) {
   .welcome__text {
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
 
   .connect {

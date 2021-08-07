@@ -44,23 +44,19 @@ const Feed = () => {
     <Fragment>
       {posts.map(({ id, post }) => {
         return (
-          <div className={classes.feed}>
+          <div className={classes.feed} key={id}>
             <div className={classes.feed_container}>
               <div className={classes.feed_left_side}>
                 <img
-                  key={Math.random()}
                   src={post.profileUrl}
                   alt="profile_pic"
                   className={classes.feed_img}
                 />
-                <p key={Math.random()} className={classes.feed_username}>
-                  {post.username}
-                </p>
+                <p className={classes.feed_username}>{post.username}</p>
               </div>
               <div className={classes.feed_right_side}>
                 {post.username === user.email.replace("@gmail.com", "") && (
                   <PostDeleteBtn
-                    key={Math.random()}
                     onDeleteHandler={() => onDeleteHandler(id, post)}
                   />
                 )}

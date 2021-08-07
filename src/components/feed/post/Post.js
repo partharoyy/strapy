@@ -51,7 +51,7 @@ const Post = ({
       </div>
       {comments ? (
         comments.map((comment) => (
-          <div className={classes.post_comments}>
+          <div className={classes.post_comments} key={Math.random()}>
             <div className={classes.comment_username}>{comment.username}</div>
             <div className={classes.comment_comment}>{comment.comment}</div>
           </div>
