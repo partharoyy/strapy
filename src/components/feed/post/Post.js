@@ -5,6 +5,7 @@ import MessageIcon from "@material-ui/icons/Message";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { db } from "../../../firebase/firebase";
+import { useEffect } from "react";
 
 const Post = ({
   id,
@@ -27,20 +28,21 @@ const Post = ({
 
   const onLikeClicked = () => {
     setLikeClicked(true);
-
-    if (likeCount >= 1) {
-      db.collection("posts")
-        .doc(id)
-        .update({
-          likes: likeCount,
-        })
-        .then(() => {
-          console.log(likeCount);
-          console.log("like added");
-        })
-        .catch((error) => console.log(error.message));
-    }
+    setLikeCount(likeCount + 1);
   };
+
+  useEffect(() => {
+    db.collection("posts")
+      .doc(id)
+      .update({
+        likes: likeCount,
+      })
+      .then(() => {
+        console.log(likeCount);
+        console.log("like added");
+      })
+      .catch((error) => console.log(error.message));
+  }, [likeCount, id]);
 
   return (
     <div className={classes.post_container}>
@@ -67,10 +69,7 @@ const Post = ({
         />
         <div className={classes.heart_icon} onClick={onLikeClicked}>
           {likeClicked ? (
-            <FavoriteIcon
-              onClick={() => setLikeCount(likeCount + 1)}
-              style={{ fill: "red" }}
-            />
+            <FavoriteIcon style={{ fill: "red" }} />
           ) : (
             <FavoriteBorderIcon />
           )}
