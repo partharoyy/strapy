@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import classes from "./Button.module.css";
 import { signInWithGoogle, googleLogout } from "../../services/auth";
 import { UserContext } from "../../context/userContext";
 import SendIcon from "@material-ui/icons/Send";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { auth } from "../../firebase/firebase";
 
 export const SignInSignUpBtn = () => {
   const [, setUser] = useContext(UserContext).user;
@@ -14,6 +15,18 @@ export const SignInSignUpBtn = () => {
       setUser(signedInUser);
     }
   };
+
+  // Below code is in continuation of auth component for retaining the user, in previous it was not rquired
+  useEffect(() => {
+    auth.onAuthStateChanged((res) => {
+      console.log("onAuthStateChanged", res);
+      if (res) {
+        setUser(res);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
 
   return (
     <button
