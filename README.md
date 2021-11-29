@@ -39,8 +39,8 @@ https://strapy.netlify.app/
 
 ## 🚨 Warning! Please read before forking or copying
 
-Though I would like to make it open source in future but for now I am keeping it personal only. Hope you can relate if you have build something from scratch after a ton of bottlenecks and hardwork.
-Requesting you to refrain from forking or copying this respository. Thank you.
+Please refrain from copying or forking. In future it will be open source.
+
 ## Lessons Learned
 
 ### Challenges
@@ -61,7 +61,7 @@ Requesting you to refrain from forking or copying this respository. Thank you.
 
 ### Things I Learned
 
-- How to desing a minimalistic social media app
+- How to design a minimalistic social media app
 
 - Problem solving
 
